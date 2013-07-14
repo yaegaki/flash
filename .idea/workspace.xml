@@ -37,7 +37,7 @@
       <file leaf-file-name="flash.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flash.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="26" selection-start="1857" selection-end="1857" vertical-scroll-proportion="0.8489893">
+            <state line="4" column="37" selection-start="245" selection-end="245" vertical-scroll-proportion="0.08596713">
               <folding />
             </state>
           </provider>
@@ -83,8 +83,8 @@
         <option value="$PROJECT_DIR$/foo.js" />
         <option value="$PROJECT_DIR$/inflate.min.js" />
         <option value="$PROJECT_DIR$/manifest.json" />
-        <option value="$PROJECT_DIR$/flash.js" />
         <option value="$PROJECT_DIR$/sample.html" />
+        <option value="$PROJECT_DIR$/flash.js" />
       </list>
     </option>
   </component>
@@ -344,7 +344,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flash.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="26" selection-start="1857" selection-end="1857" vertical-scroll-proportion="0.8489893">
+        <state line="4" column="37" selection-start="245" selection-end="245" vertical-scroll-proportion="0.08596713">
           <folding />
         </state>
       </provider>

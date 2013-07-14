@@ -2,11 +2,11 @@
     var _flash =  window.flash || (window.flash = function (bin) {
         var pos = 0;
         this.Signature = BC.ToAscii(bin, pos++) + BC.ToAscii(bin, pos++) + BC.ToAscii(bin, pos++);
-        this.Composed = (this.Signature[0] == "C") ? true : false;
+        this.Compressed = (this.Signature[0] == "C") ? true : false;
         this.Version = BC.ToUInt8(bin, pos++);
         this.FileLength = BC.ToUInt32(bin, pos);
         pos += 4;
-        if(this.Composed){
+        if(this.Compressed){
             bin = (new Zlib.Inflate(bin, {index:pos})).decompress();
             pos = 0;
         }
@@ -20,7 +20,7 @@
         while (pos < bin.length) {
             this.Tag.push(new Tag(bin, pos));
             pos += this.Tag[this.Tag.length - 1].Size;
-            if(this.Composed) this.Tag[this.Tag.length-1].Position += 8;
+            if(this.Compressed) this.Tag[this.Tag.length-1].Position += 8;
             if(this.Tag[this.Tag.length - 1].Type == 0) break;
         }
     });
